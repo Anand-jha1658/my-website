@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Anand | Web Portfolio</title>
+  <meta name="description" content="Portfolio of Anand Shekhar - Web Developer, Designer, Freelancer.">
+  <meta property="og:title" content="Anand Shekhar Portfolio">
+  <meta property="og:description" content="Web Developer and Designer from Bihar, India.">
+  <meta property="og:image" content="https://example.com/preview.jpg">
+  <meta property="og:url" content="https://yourdomain.com">
+
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-gray-900 text-white">
+
+<!-- WhatsApp Floating Button -->
+<a href="https://wa.me/917480037270" class="fixed bottom-6 right-6 z-50 bg-green-500 hover:bg-green-600 text-white rounded-full p-4 shadow-lg">
+  💬
+</a>
+<!-- Navbar -->
+<header class="bg-gray-900 fixed top-0 w-full z-50 shadow">
+  <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+    <h1 class="text-xl font-bold text-white">Anand</h1>
+    <nav class="hidden md:flex gap-6 text-white">
+      <a href="#" class="hover:text-blue-400">Home</a>
+      <a href="#services" class="hover:text-blue-400">Services</a>
+      <a href="#portfolio" class="hover:text-blue-400">Portfolio</a>
+      <a href="#about" class="hover:text-blue-400">About</a>
+      <a href="#contact" class="hover:text-blue-400">Contact</a>
+    </nav>
+    <button id="menu-btn" class="md:hidden text-white text-2xl">☰</button>
+  </div>
+  <div id="mobile-menu" class="hidden flex-col gap-4 bg-gray-800 text-white text-center md:hidden p-4">
+    <a href="#" class="block">Home</a>
+    <a href="#services" class="block">Services</a>
+    <a href="#portfolio" class="block">Portfolio</a>
+    <a href="#about" class="block">About</a>
+    <a href="#contact" class="block">Contact</a>
+  </div>
+</header>
+<!-- Hero -->
+<section class="min-h-screen flex flex-col justify-center items-center text-center pt-20" id="home">
+  <h1 class="text-4xl md:text-6xl font-bold mb-4">Hi, I'm <span class="text-blue-500">Anand</span></h1>
+  <h2 class="text-xl md:text-3xl typing" id="typing-text"></h2>
+</section>
+
+<!-- Services Section -->
+<section class="py-16 px-6 bg-gray-900" id="services">
+  <h2 class="text-3xl font-bold mb-8 text-center" data-aos="fade-down">What I Do</h2>
+  <div class="grid md:grid-cols-3 gap-8">
+    <div class="bg-gray-800 p-6 rounded-xl hover:scale-105 transition" data-aos="fade-up">
+      <h3 class="text-xl font-semibold mb-2">Web Design</h3>
+      <p>Modern UI/UX design and responsive layouts.</p>
+    </div>
+    <div class="bg-gray-800 p-6 rounded-xl hover:scale-105 transition" data-aos="fade-up" data-aos-delay="100">
+      <h3 class="text-xl font-semibold mb-2">Development</h3>
+      <p>Full-stack development using latest technologies.</p>
+    </div>
+    <div class="bg-gray-800 p-6 rounded-xl hover:scale-105 transition" data-aos="fade-up" data-aos-delay="200">
+      <h3 class="text-xl font-semibold mb-2">SEO & Branding</h3>
+      <p>Optimized, brand-focused solutions to grow online presence.</p>
+    </div>
+  </div>
+</section>
+
+<!-- About + Resume -->
+<section class="py-16 px-6" id="about">
+  <h2 class="text-3xl font-bold mb-8 text-center">About Me</h2>
+  <div class="max-w-3xl mx-auto text-center mb-6">
+    <p>I’m a diploma student in Computer Science and passionate about Web Development & Design. I enjoy building responsive, creative, and user-friendly experiences.</p>
+  </div>
+  <div class="text-center">
+    <a href="Anand_Shekhar_Resume.pdf" download class="bg-blue-600 hover:bg-blue-700 px-6 py-2 rounded text-white">📄 Download Resume</a>
+  </div>
+</section>
+
+<!-- Testimonials -->
+<section class="py-16 px-6 bg-gray-800" id="testimonials">
+  <h2 class="text-3xl font-bold mb-8 text-center">What People Say</h2>
+  <div class="max-w-3xl mx-auto space-y-8">
+    <div class="bg-gray-700 p-6 rounded-lg shadow" data-aos="fade-up">
+      <p>"Anand is one of the most dedicated developers I’ve worked with. Highly recommended!"</p>
+      <p class="mt-2 text-sm text-right">— Ravi Sharma, Business Owner</p>
+    </div>
+    <div class="bg-gray-700 p-6 rounded-lg shadow" data-aos="fade-up" data-aos-delay="100">
+      <p>"Great design sense and attention to detail. He built our site exactly as needed."</p>
+      <p class="mt-2 text-sm text-right">— Priya Verma, Freelancer</p>
+    </div>
+    <div class="bg-gray-700 p-6 rounded-lg shadow" data-aos="fade-up" data-aos-delay="200">
+      <p>"Quick, professional and always responsive. Anand delivers excellent work every time."</p>
+      <p class="mt-2 text-sm text-right">— Amit Jaiswal, Startup Founder</p>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section class="py-16 px-6 bg-gray-900" id="contact">
+  <h2 class="text-3xl font-bold mb-8 text-center" data-aos="fade-down">Contact Me</h2>
+  <form class="max-w-xl mx-auto grid gap-4" id="contact-form">
+    <input type="text" name="user_name" placeholder="Name" class="p-3 rounded bg-gray-800 text-white border-none" required />
+    <input type="email" name="user_email" placeholder="Email" class="p-3 rounded bg-gray-800 text-white border-none" required />
+    <textarea name="message" placeholder="Message" class="p-3 rounded bg-gray-800 text-white border-none" required></textarea>
+    <button type="submit" class="bg-blue-500 hover:bg-blue-600 text-white py-2 rounded">Send Message</button>
+  </form>
+</section>
+<!-- Footer with social links -->
+<footer class="py-6 text-center text-gray-400">
+  <div class="mb-2">
+    <a href="https://www.linkedin.com/in/anand-shekhar-425575315" class="mx-2 hover:text-white">🔗 LinkedIn</a>
+    <a href="https://github.com" class="mx-2 hover:text-white">🐱 GitHub</a>
+    <a href="https://instagram.com" class="mx-2 hover:text-white">📷 Instagram</a>
+  </div>
+  <p>© 2025 Anand Shekhar. All rights reserved.</p>
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="js/script.js"></script>
+<script>AOS.init();</script>
+</body>
+</html>
